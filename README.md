@@ -1,8 +1,11 @@
 # Tarefa de LABORATORIO DE BANCO DE DADOS 
  Alunos => ({Raphael Anaximenes} e {Rodrigo Ribeiro}){
 Nota do autor:
+<div style="aligned">
+<img  style="width:40%; height:40%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao2.jpg">
+<img  style="width:40%; height:40%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao3.jpg">
+</div>
 
-<label>[Raphael] </label>
 * Utilizando os conhecimentos adquiridos até aqui, trouxe este trabalho... espero que goste!
 Aqui utilizei alguns recursos bem legais como:
 * Nodemon e Express, que foram mostrado em aula.
@@ -32,6 +35,9 @@ Como banco de dados escolhi o MySql, onde apliquei os conceitos de ConnectionFac
     npm start,
     nodemon app.js
 }
+
+<img  style="width:60%; height:70%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/starting.jpg">
+
 
 A aplicação iniciará o Nodemon, em seguida o Express e Ejs.
 Após isso, o módulo do Consign carregará as rotas que indicam todos os módulos para as views.

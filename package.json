@@ -1,0 +1,18 @@
+{
+  "name": "projetonava",
+  "version": "1.0.0",
+  "description": "Projeto para Lab. BD Alunos ({Raphael Anaximenes} e {Rodrigo Ribeiro})",
+  "main": "noticias.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael Anaximenes",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  }
+}

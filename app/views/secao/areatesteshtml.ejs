@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BRr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡Área de testes ⚡</title>
+    <!-- Dá pra passar css inline e interno, com o ejs-->
+    <style>
+        .aligned{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .btn-anx {
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #4CAF50;
+          -webkit-box-shadow: -25px -12px 19px 8px rgba(161,255,161,0.68);
+          box-shadow: -25px -12px 19px 8px rgba(161,255,161,0.68);
+        }
+        
+        .button1:hover {
+          background-color: #4CAF50;
+          color: white;
+          box-shadow:inset -25px -12px 19px 8px rgba(161,255,161,0.68);
+        }
+        
+        .button2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #008CBA;
+        }
+        
+        .button2:hover {
+          background-color: #008CBA;
+          color: white;
+          transform: rotate(-5deg);
+            transform-origin: bottom left;
+        }
+
+        .button3 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #e28b08;
+        }
+        
+        .button3:hover {
+          background-color: #dd4600;
+          color: white;
+            transform: rotate(12deg);
+            transform-origin: bottom left;
+            }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+                }
+
+        th, td {
+          text-align: left;
+          padding: 8px;
+                }
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {
+          background-color: #4CAF50;
+          color: white;
+              }
+        .anxdiv{
+          display: flex;
+          justify-content: center;
+          padding: 12px;
+          width: max-content;
+          margin: 12px;
+          max-width: fit-content;
+        }
+        .pointers{
+          align-content: space-between 15px;
+          font-size: 15px;
+          font-family: "Comic Sans MS", cursive, sans-serif;
+          color: #631130;
+          padding: 10px 12px;
+          border-top: 13px inset #42b99b;
+          border-radius: 40px 0px 40px 7px;
+          background-color: rgba(145, 167, 158, 0.322);
+          -webkit-box-shadow: -20px -3px 42px -2px #000000; 
+          box-shadow: -20px -3px 42px -2px #000000;
+          text-align: center;
+          margin: 10px;
+        }
+
+        .pointers:hover{
+          -moz-transform: scale(1.4) translate(5px, -6px);
+          -webkit-transform: scale(1.4) translate(5px, -6px);
+          -o-transform: scale(1.4) translate(5px, -6px);
+          -ms-transform: scale(1.4) translate(5px, -6px);
+          transform: scale(1.4) translate(5px, -6px);
+          background-color: rgba(136, 177, 66, 0.568);
+        }
+
+
+        
+        .pointers>p:hover{
+          color: #FFFFFF;
+          text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #020824 0px 0px 20px, #080b31 0px 0px 30px, #232e07 0px 0px 40px, #200313 0px 0px 50px, #041b0e 0px 0px 75px;
+          text-align: center;
+          z-index: 1;
+          }
+
+    </style>
+</head>
+<body>
+    <h1 align="center"> Elementos html passados via ejs para o node </h1>    
+    <hr>
+    
+    <section style="background-color: gainsboro;">
+      <h1> Notícias (retorno mysql) </h1>
+       <table style="padding: auto;">
+        <tr>
+          <td>ID</td>
+          <td>Tecnologia</td>
+          <td>Nivel</td>
+          <td>Area </td>
+          <td>Comentário</td>
+        </tr>
+  
+        <% for(var i=0; i < tecnologias.length; i++) { %>
+        <tr>
+          <td><%=tecnologias[i].id %></td>
+          <td><%=tecnologias[i].tecnologia %></td>
+          <td><%=tecnologias[i].nivel %></td>
+          <td><%=tecnologias[i].area %></td>
+          <td><%=tecnologias[i].comentario %></td>
+        </tr>
+        <% } %>
+      </table>
+      <hr>
+      
+
+      <h3>Exemplos de Retornos gráficos SQL:</h3>
+      <hr>
+      <div class="anxdiv">
+       
+    
+
+        <% for(var i=0; i < tecnologias.length; i++) { %>
+          <div class="pointers">
+            <p><%=tecnologias[i].tecnologia %></p>
+            <p>Nível: <%=tecnologias[i].nivel %></p>
+            <hr>
+            <br>Área: <p><%=tecnologias[i].area %></p>
+            <br><hr>Onde usei mais: <p><%=tecnologias[i].comentario %></div>
+        <% } %>
+      </div>
+      <hr>
+    </section> <!-- Return do mysql -->
+</body>
+</html>

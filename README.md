@@ -2,8 +2,10 @@
  Alunos => ({Raphael Anaximenes} e {Rodrigo Ribeiro}){
 Nota do autor:
 <div style="aligned">
-<img  style="width:40%; height:40%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao2.jpg">
-<img  style="width:40%; height:40%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao3.jpg">
+<img  style="width:14%; height:14%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/tree.jpg">
+
+<img  style="width:42%; height:42%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao2.jpg">
+<img  style="width:42%; height:42%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/LABNava2022/main/src/img/Exemplocartao3.jpg">
 </div>
 
 * Utilizando os conhecimentos adquiridos até aqui, trouxe este trabalho... espero que goste!
@@ -22,6 +24,7 @@ Aqui utilizei alguns recursos bem legais como:
     .into(app);
 
 }
+
 
 * Também utilizei o Ejs, na versão "^3.1.8", para renderizar algumas views na "areatesteshtml", onde programei um ambiente simples frontend que simula o cartão que apareceria.
 
